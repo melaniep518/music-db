@@ -15,3 +15,8 @@ app.listen('9999', () => console.log('Listening on port 9999'));
 //////////
 // YOUR CODE HERE:
 //////////
+
+// Importing consolidated routes
+const routes = require('./routes/index').routes;
+
+app.use('/api/artists', routes.artist);
