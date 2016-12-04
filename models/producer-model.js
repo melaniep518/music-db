@@ -1,11 +1,7 @@
 const Sequelize = require('sequelize');
 const sequelizeConnection = require('../db');
 
-
-//////////
-// YOUR CODE HERE:
-//////////
-const Artist = sequelizeConnection.define('artist', {
+const Producer = sequelizeConnection.define('producer', {
 	name: {
 		type: Sequelize.STRING,
 		validate: {
@@ -14,4 +10,4 @@ const Artist = sequelizeConnection.define('artist', {
 	}
 })
 
-module.exports = Artist;
+module.exports = Producer;

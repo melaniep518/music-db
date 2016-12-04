@@ -12,9 +12,10 @@ const Playlist = sequelizeConnection.define('playlist', {
 			len: [1, 100]
 		}
 	}
-})
+});
 
-// could be a variable
+// could be a variable kept in a file called constants
+// Creating join table
 Playlist.belongsToMany(Song, {through: 'playlistSongs'});
 Song.belongsToMany(Playlist, {through: 'playlistSongs'});
 

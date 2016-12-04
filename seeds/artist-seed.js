@@ -9,7 +9,9 @@ Artist.sync({force: true})
   {name: 'Frank Ocean'},
   {name: 'Odesza'},
   {name: 'Nas'},
-]))
+]));
+
+
 // //the following artists should NOT be added to your database:
 // //(if your validations are setup correctly)
 // .then(() => Artist.bulkCreate([

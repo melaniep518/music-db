@@ -27,8 +27,14 @@ const Song = sequelizeConnection.define('song', {
 
 // Joins
 Song.belongsTo(Artist);
+
+// SongGenre table
 Song.belongsToMany(Genre, {through: 'songGenre'});
 Genre.belongsToMany(Song, {through: 'songGenre'});
+
+// Feature table
+Artist.belongsToMany(Song, {through: 'songFeatures'});
+Song.belongsToMany(Artist, {through: 'songFeatures'});
 
 
 module.exports = Song;
