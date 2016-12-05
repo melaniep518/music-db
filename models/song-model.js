@@ -20,16 +20,24 @@ const Song = sequelizeConnection.define('song', {
 	}
 })
 
+
 // Joins
 Song.belongsTo(Artist);
 
-// SongGenre table
+// adds attribute 'projectId' to Song model, instances of Project will get methods getTracks and setTracks
+// should this be a seperate table
+Project.hasMany(Song, {as: 'Tracks'});
+
+// SongGenre table (gives Song and 'addGenres' method, gives Genre an 'addSongs' method??)
 Song.belongsToMany(Genre, {through: 'songGenre'});
 Genre.belongsToMany(Song, {through: 'songGenre'});
 
-// Feature table
+// songFeature table
 Artist.belongsToMany(Song, {through: 'songFeatures'});
 Song.belongsToMany(Artist, {through: 'songFeatures'});
 
+// songProducer table
+Song.belongsToMany(Producer, {through: 'songProducer'});
+Producer.belongsToMany(Song, {through: 'songProducer'});
 
 module.exports = Song;
