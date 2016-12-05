@@ -1,7 +1,11 @@
 const Sequelize = require('sequelize');
 const sequelizeConnection = require('../db');
+
+// ********** Import models **********
 const Artist = require('./artist-model');
 const Genre = require('./genre-model');
+const Project = require('./project-model');
+const Producer = require('./producer-model');
 
 // Creating a model
 const Song = sequelizeConnection.define('song', {
@@ -14,7 +18,7 @@ const Song = sequelizeConnection.define('song', {
 	youtube_url: {
 		type: Sequelize.STRING,
 		validate: {
-			len: [1, 50],
+			len: [1, 200],
 			isUrl: true
 		}
 	}

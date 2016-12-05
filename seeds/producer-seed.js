@@ -9,4 +9,9 @@ Producer.sync({force: true})
   {name: 'SBTRKT'},
   {name: '9th Wonder'},
   {name: 'Kanye West'},
+  {name: 'Midi Mafia'},
+  {name: 'Malay'},
+  {name: 'Caleb Levan'},
+  {name: 'Buddy Ross'},
+  {name: 'Vegyn'}
 ]));

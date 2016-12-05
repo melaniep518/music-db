@@ -10,4 +10,5 @@ const Artist = sequelizeConnection.define('artist', {
 	}
 })
 
+
 module.exports = Artist;
