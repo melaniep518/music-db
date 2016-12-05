@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+}
+
+/*body {
+
+}*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+.brand {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 300;
+}
+
+.brand span {
+  font-weight: 700;
+}
+
+ul {
+  width: 300px;
+  /*background-color: blue;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+li {
+  list-style: none;
+}
