@@ -15,7 +15,14 @@ app.listen('9999', () => console.log('Listening on port 9999'));
 // Importing consolidated routes
 const routes = require('./routes/index').routes;
 
+// Artist routes
 app.use('/api/artists', routes.artist);
+
+// Song rotes
+app.use('/api/songs', routes.song);
+
+// Playlist routes
+app.use('/api/playlists', routes.playlist);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/front/index.html'));
