@@ -6,9 +6,15 @@ const Genre = require('../models/genre-model');
 
 // ****************************** Callbacks ******************************
 
+
+// nested inclues: inside array goes an object, first property is model that is associated with playlist
+// second key is what you want to include from that is linked to the first model
 function getPlaylistsWithInfo(req, res) {
 	Playlist.findAll({
-		include: [Song]
+		include: [{
+			model: Song, 
+			include: [Artist, Genre]
+		}]
 	})
 	.then(function(data) {
 		res.send(data);
