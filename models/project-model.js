@@ -1,6 +1,10 @@
 const Sequelize = require('sequelize');
 const sequelizeConnection = require('../db');
 
+// ********** Import models **********
+const Artist = require('./artist-model');
+const Genre = require('./genre-model');
+
 const Project = sequelizeConnection.define('project', {
 	name: {
 		type: Sequelize.STRING,
@@ -15,6 +19,15 @@ const Project = sequelizeConnection.define('project', {
 		}
 
 	}
-})
+});
+
+// Joins
+// adds artistId to Project model, gives Artist methods 'getProjects' and 'setProjects'
+Artist.hasMany(Project, {as: 'Projects'});
+
+
+Genre.belongsToMany(Project, {through: 'projectGenre'});
+Project.belongsToMany(Genre, {through: 'projectGenre'});
+
 
 module.exports = Project;

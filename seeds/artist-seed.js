@@ -9,6 +9,7 @@ Artist.sync({force: true})
   {name: 'Frank Ocean'},
   {name: 'Odesza'},
   {name: 'Nas'},
+  {name: 'Earl Sweatshirt'}
 ]));
 
 
