@@ -30,4 +30,11 @@ Genre.belongsToMany(Project, {through: 'projectGenre'});
 Project.belongsToMany(Genre, {through: 'projectGenre'});
 
 
+// Joins
+// adds artistId to Project model, gives Artist methods 'getProjects' and 'setProjects'
+Artist.hasMany(Project, {as: 'Projects'});
+
+Genre.belongsToMany(Project, {through: 'projectGenre'});
+Project.belongsToMany(Genre, {through: 'projectGenre'});
+
 module.exports = Project;
