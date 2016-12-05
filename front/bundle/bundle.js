@@ -26471,7 +26471,7 @@
 	
 	
 	// module
-	exports.push([module.id, "html, body {\n  margin: 0;\n}\n\n/*body {\n\n}*/\n\nnav {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.navLinks a {\n  text-decoration: none;\n  color: black;\n}\n\n.brand {\n  font-size: 1.5rem;\n  margin: 0;\n  font-weight: 300;\n}\n\n.brand span {\n  font-weight: 700;\n}\n\nul {\n  width: 300px;\n  /*background-color: blue;*/\n  display: flex;\n  justify-content: space-between;\n  /*align-items: center;*/\n}\n\nli {\n  list-style: none;\n}\n", ""]);
+	exports.push([module.id, "html, body {\n  margin: 0;\n}\n\n/*--------Navbar-------*/\n\nnav {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.navLinks a {\n  text-decoration: none;\n  color: black;\n}\n\n.brand {\n  font-size: 1.5rem;\n  margin: 0;\n  font-weight: 300;\n}\n\n.brand span {\n  font-weight: 700;\n}\n\nul {\n  width: 300px;\n  /*background-color: blue;*/\n  display: flex;\n  justify-content: space-between;\n  /*align-items: center;*/\n}\n\nli {\n  list-style: none;\n}\n\n/*--------/Navbar-------*/\n\n\n\n/*--------Artist-------*/\n.mainContainer {\n  /*height: 900px;*/\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  /*background-color: blue;*/\n}\n\n.artistContainer {\n  width: 500px;\n  height: 600px;\n  /*background-color: orange;*/\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n/*--------/Artist-------*/\n\n\n\n/*--------Song-------*/\n.songContainer {\n  width: 90%;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.individualSong {\n  margin-top: 20px;\n  width: 400px;\n  height: 400px;\n  /*background-color: yellow;*/\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #efefef;\n  border-radius: 5px;\n}\n/*--------/Song-------*/\n", ""]);
 	
 	// exports
 
@@ -26877,7 +26877,7 @@
 /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26890,13 +26890,26 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Artist = _react2.default.createClass({
-	  displayName: 'Artist',
+	  displayName: "Artist",
 	
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      'This is the artist page'
+	      "div",
+	      { className: "mainContainer" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "artistContainer" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Artist names will go here"
+	        ),
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Artist names will go here"
+	        )
+	      )
 	    );
 	  }
 	});
@@ -26907,7 +26920,7 @@
 /* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26920,13 +26933,130 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Song = _react2.default.createClass({
-	  displayName: 'Song',
+	  displayName: "Song",
 	
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      'This is the song page'
+	      "div",
+	      { className: "mainContainer" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "songContainer" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "individualSong" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Song Title"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Artist"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Youtube"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "individualSong" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Song Title"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Artist"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Youtube"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "individualSong" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Song Title"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Artist"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Youtube"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "individualSong" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Song Title"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Artist"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Youtube"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "individualSong" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Song Title"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Artist"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Youtube"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "individualSong" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Song Title"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Artist"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Youtube"
+	          )
+	        )
+	      )
 	    );
 	  }
 	});

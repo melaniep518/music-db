@@ -3,7 +3,12 @@ import React from 'react';
 const Artist = React.createClass({
   render: function (){
     return (
-      <div>This is the artist page</div>
+      <div className="mainContainer">
+        <div className="artistContainer">
+            <h1>Artist names will go here</h1>
+            <h1>Artist names will go here</h1>
+        </div>
+      </div>
     )
   }
 })
