@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //listen on port 8888
 app.listen('9999', () => console.log('Listening on port 9999'));
 
+// Importing consolidated routes
 const routes = require('./routes/index').routes;
 
-app.use('/api/artists', routes.artist)
+app.use('/api/artists', routes.artist);

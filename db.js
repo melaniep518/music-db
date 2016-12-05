@@ -1,4 +1,4 @@
- user_name = require('./config')
+const user_name = require('./config')
 
 const Sequelize = require('sequelize');
 //create the database connection. we'll export this out so we can use it in other places in the app
