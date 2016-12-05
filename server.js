@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //listen on port 8888
 app.listen('9999', () => console.log('Listening on port 9999'));
 
+const routes = require('./routes/index').routes;
 
-//////////
-// YOUR CODE HERE:
-//////////
+app.use('/api/artists', routes.artist)
