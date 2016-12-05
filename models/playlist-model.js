@@ -2,9 +2,6 @@ const Sequelize = require('sequelize');
 const sequelizeConnection = require('../db');
 const Song = require('./song-model');
 
-//////////
-// YOUR CODE HERE:
-//////////
 const Playlist = sequelizeConnection.define('playlist', {
 	title: {
 		type: Sequelize.STRING,
@@ -18,6 +15,5 @@ const Playlist = sequelizeConnection.define('playlist', {
 // Creating join table
 Playlist.belongsToMany(Song, {through: 'playlistSongs'});
 Song.belongsToMany(Playlist, {through: 'playlistSongs'});
-
 
 module.exports = Playlist;

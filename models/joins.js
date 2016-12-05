@@ -10,8 +10,7 @@
 // Genre.belongsToMany(Song, {through: 'songGenre'});
 
 // Artist.belongsToMany(Song, {through: 'songFeatures'});
-// Song.belongsToMany(Artist, {through: 'songFeatures'}); 
+// Song.belongsToMany(Artist, {through: 'songFeatures'});
 
 // Playlist.belongsToMany(Song, {through: 'playlistSongs'});
 // Song.belongsToMany(Playlist, {through: 'playlistSongs'});
-

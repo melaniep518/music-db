@@ -7,11 +7,6 @@ const Genre = require('./genre-model');
 const Project = require('./project-model');
 const Producer = require('./producer-model');
 
-
-//////////
-// YOUR CODE HERE:
-//////////
-
 // Creating a model
 const Song = sequelizeConnection.define('song', {
 	title: {
@@ -20,7 +15,7 @@ const Song = sequelizeConnection.define('song', {
 			len: [1, 100]
 		}
 	},
-	youtube_url: { 
+	youtube_url: {
 		type: Sequelize.STRING,
 		validate: {
 			len: [1, 200],
@@ -28,6 +23,7 @@ const Song = sequelizeConnection.define('song', {
 		}
 	}
 })
+
 
 // Joins
 Song.belongsTo(Artist);
@@ -47,6 +43,5 @@ Song.belongsToMany(Artist, {through: 'songFeatures'});
 // songProducer table
 Song.belongsToMany(Producer, {through: 'songProducer'});
 Producer.belongsToMany(Song, {through: 'songProducer'});
-
 
 module.exports = Song;
