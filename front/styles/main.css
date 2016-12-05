@@ -1,0 +1,84 @@
+html, body {
+  margin: 0;
+}
+
+/*--------Navbar-------*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+.brand {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 300;
+}
+
+.brand span {
+  font-weight: 700;
+}
+
+ul {
+  width: 300px;
+  /*background-color: blue;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+li {
+  list-style: none;
+}
+
+/*--------/Navbar-------*/
+
+
+
+/*--------Artist-------*/
+.mainContainer {
+  /*height: 900px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: blue;*/
+}
+
+.artistContainer {
+  width: 500px;
+  height: 600px;
+  /*background-color: orange;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*--------/Artist-------*/
+
+
+
+/*--------Song-------*/
+.songContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.individualSong {
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+  /*background-color: yellow;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+/*--------/Song-------*/
