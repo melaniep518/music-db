@@ -24,6 +24,9 @@ app.use('/api/songs', routes.song);
 // Playlist routes
 app.use('/api/playlists', routes.playlist);
 
+// Genre routes
+app.use('/api/genres', routes.genre);
+
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/front/index.html'));
 });
