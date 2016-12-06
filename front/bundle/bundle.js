@@ -37432,11 +37432,6 @@
 	            'li',
 	            { className: 'list' },
 	            'Playlist names wil go here'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'list' },
-	            'Playlist names wil go here'
 	          )
 	        )
 	      )
