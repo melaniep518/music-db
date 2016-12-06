@@ -25,7 +25,6 @@ const Artist = React.createClass({
             <h1>{this.props.artists.map(function(val, idx) {
               return <li key={idx}>{val.name}</li>
             })}</h1>
-            <h1>Artist names will go here</h1>
         </div>
       </div>
     )

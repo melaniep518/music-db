@@ -17,7 +17,7 @@ const Playlist = React.createClass({
           <h1>Playlists</h1>
           <ul className="listUl">
             <li className="list">Playlist names wil go here</li>
-            {/* <li className="list">Playlist names wil go here</li> */}
+            <li className="list">Playlist names wil go here</li>
           </ul>
         </div>
       </div>

@@ -6,13 +6,14 @@ import store from '../store.js';
 
 // ************************************ IMPORT REDUCERS ************************************
 import {artistReducer} from './artist-reducer.js';
-
+import {playlistsReducer} from './playlists-reducer.js';
 // ************************************ COMBINE REDUCERS ************************************
 
 // combine reducers
 // from here: artistReducer
 const rootReducer = combineReducers({
-  artistReducer
+  artistReducer,
+  playlistsReducer
 })
 
 export default rootReducer;

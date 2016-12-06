@@ -11,6 +11,7 @@ import './styles/main.css';
 import Navbar from './components/Navbar';
 import Artist from './components/artist';
 import {ArtistContainer} from './containers/artist-container';
+import {PlaylistContainer} from './containers/playlists-container';
 import Song from './components/song'
 import Playlist from './components/playlists'
 import CreatePlaylist from './components/createplaylist'
@@ -33,7 +34,7 @@ ReactDOM.render(
         <IndexRoute component={ArtistContainer} />
         <Route path="artist" component={ArtistContainer}></Route>
         <Route path="song" component={Song}></Route>
-        <Route path="playlist" component={Playlist}></Route>
+        <Route path="playlists" component={PlaylistContainer}></Route>
         <Route path="createPlaylist" component={CreatePlaylist}></Route>
       </Route>
     </Router>
