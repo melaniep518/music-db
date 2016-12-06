@@ -30,7 +30,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={Artist} />
+        <IndexRoute component={ArtistContainer} />
         <Route path="artist" component={ArtistContainer}></Route>
         <Route path="song" component={Song}></Route>
         <Route path="playlist" component={Playlist}></Route>
