@@ -4,7 +4,7 @@ const _initialState = {
 	artists: []
 }
 
-// ultimately our data from our displayArtists action in our artists 
+// ultimately our data from our displayArtists action in our artists
 // from here: artist-container.js
 
 function artistReducer(state = _initialState, action) {
@@ -16,7 +16,6 @@ function artistReducer(state = _initialState, action) {
 		default:
 			return stateCopy;
 	}
-
 }
 
 export {artistReducer};
