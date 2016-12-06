@@ -37605,6 +37605,7 @@
 	
 	// distributes branches of our state to our components
 	// artists belongs to artistReducer branch of state
+	// from here: App.jsx
 	
 	var mapStateToProps = function mapStateToProps(state) {
 		return {
