@@ -33,7 +33,7 @@ ReactDOM.render(
         <IndexRoute component={ArtistContainer} />
         <Route path="artist" component={ArtistContainer}></Route>
         <Route path="song" component={Song}></Route>
-        <Route path="playlist" component={Playlist}></Route>
+        <Route path="playlists" component={Playlist}></Route>
         <Route path="createPlaylist" component={CreatePlaylist}></Route>
       </Route>
     </Router>
