@@ -125,7 +125,7 @@
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/', component: App },
-	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _artist2.default }),
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _artistContainer.ArtistContainer }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'artist', component: _artistContainer.ArtistContainer }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'song', component: _song2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'playlist', component: _playlist2.default }),
