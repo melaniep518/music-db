@@ -11,7 +11,7 @@ const Navbar = React.createClass({
             <ul>
               <li className="navLinks"><Link to="/artist">Artists</Link></li>
               <li className="navLinks"><Link to="/song">Songs</Link></li>
-              <li className="navLinks"><Link to="/playlist">Playlists</Link></li>
+              <li className="navLinks"><Link to="/playlists">Playlists</Link></li>
               <li className="navLinks"><Link to="/createPlaylist">Create playlist</Link></li>
             </ul>
           </div>

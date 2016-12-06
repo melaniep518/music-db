@@ -1,6 +1,15 @@
 import React from 'react';
+import $ from 'jquery'
 
 const Song = React.createClass({
+  componentDidMount: function() {
+    $.ajax({
+      url: 'api/songs/',
+      success: function(songs) {
+        console.log(songs)
+      }
+    })
+  },
   render: function(){
     return (
       <div className="mainContainer">

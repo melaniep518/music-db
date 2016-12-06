@@ -4,10 +4,9 @@ import $ from 'jquery';
 import {displayArtists} from '../actions/artist-actions';
 
 const Artist = React.createClass({
-
-// START HERE: 
-// sends an ajax request to our backend 
-// from here: displayArtists action 
+// START HERE:
+// sends an ajax request to our backend
+// from here: displayArtists action
   componentDidMount: function() {
     $.ajax({
       url: '/api/artists/',
@@ -18,7 +17,6 @@ const Artist = React.createClass({
       }
     })
   },
-
   render: function () {
     console.log('PROPS:', this.props.artists)
     return (
