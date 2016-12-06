@@ -12,7 +12,7 @@ import Navbar from './components/Navbar';
 import Artist from './components/artist';
 import {ArtistContainer} from './containers/artist-container';
 import Song from './components/song'
-import Playlist from './components/playlist'
+import Playlist from './components/playlists'
 import CreatePlaylist from './components/createplaylist'
 
 const App = React.createClass({
@@ -25,7 +25,6 @@ const App = React.createClass({
     )
   }
 })
-
 
 ReactDOM.render(
   <Provider store={store}>
@@ -41,5 +40,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('app')
 )
-
-export default App;
