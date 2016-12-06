@@ -9,7 +9,7 @@ import './styles/main.css';
 import Navbar from './components/Navbar';
 import Artist from './components/artist';
 import Song from './components/song'
-import Playlist from './components/playlist'
+import Playlist from './components/playlists'
 import CreatePlaylist from './components/createplaylist'
 
 const App = React.createClass({
@@ -30,7 +30,7 @@ ReactDOM.render(
       <IndexRoute component={Artist} />
       <Route path="artist" component={Artist}></Route>
       <Route path="song" component={Song}></Route>
-      <Route path="playlist" component={Playlist}></Route>
+      <Route path="playlists" component={Playlist}></Route>
       <Route path="createPlaylist" component={CreatePlaylist}></Route>
     </Route>
   </Router>,

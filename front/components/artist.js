@@ -1,6 +1,20 @@
 import React from 'react';
+import $ from 'jquery';
 
 const Artist = React.createClass({
+  // getInitialState: function () {
+  //   return {
+  //
+  //   }
+  // },
+  componentDidMount: function () {
+    $.ajax({
+      url: 'api/artists/',
+      success: function(data) {
+        console.log(data[0].name)
+      }
+    })
+  },
   render: function (){
     return (
       <div className="mainContainer">
