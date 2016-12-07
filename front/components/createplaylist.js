@@ -7,8 +7,10 @@ const CreatePlaylist = React.createClass({
         <div>
           <h1 className="pageTitles">Create a playlit</h1>
           <form>
-            <label>Playlist Name</label>
-            <input type="text"></input>
+            <label for="playlistName">Playlist Name</label>
+            <input id="playlistName" type="text"></input>
+            <label for="songTitle">Song Title</label>
+            <input id="songTitle" type="text"></input>
           </form>
         </div>
       </div>
