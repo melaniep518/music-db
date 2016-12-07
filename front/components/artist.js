@@ -10,6 +10,7 @@ const Artist = React.createClass({
   componentDidMount: function() {
     $.ajax({
       url: '/api/artists/',
+      type: "GET",
       success: function(artists) {
         console.log(artists);
         // Sends data to our store
@@ -22,9 +23,11 @@ const Artist = React.createClass({
     return (
       <div className="mainContainer">
         <div className="artistContainer">
-            <h1>{this.props.artists.map(function(val, idx) {
-              return <li key={idx}>{val.name}</li>
-            })}</h1>
+          <h1 className="pageTitles">Artists</h1>
+          <ul>
+            {this.props.artists.map(function(val, idx) {
+            return <li key={idx}>{val.name}</li>})}
+          </ul>
         </div>
       </div>
     )

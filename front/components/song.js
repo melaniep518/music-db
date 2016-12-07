@@ -13,7 +13,9 @@ const Song = React.createClass({
   render: function(){
     return (
       <div className="mainContainer">
+        {/* <h1>Song List</h1> */}
         <div className="songContainer">
+
           <div className="individualSong">
             <h2>Song Title</h2>
             <h2>Artist</h2>
