@@ -9,11 +9,9 @@ import './styles/main.css';
 
 // components
 import Navbar from './components/Navbar';
-import Artist from './components/artist';
 import {ArtistContainer} from './containers/artist-container';
 import {PlaylistContainer} from './containers/playlists-container';
-import Song from './components/song'
-import Playlist from './components/playlists'
+import {SongContainer} from './containers/song-container';
 import CreatePlaylist from './components/createplaylist'
 
 const App = React.createClass({
@@ -33,7 +31,7 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={ArtistContainer} />
         <Route path="artist" component={ArtistContainer}></Route>
-        <Route path="song" component={Song}></Route>
+        <Route path="song" component={SongContainer}></Route>
         <Route path="playlists" component={PlaylistContainer}></Route>
         <Route path="createPlaylist" component={CreatePlaylist}></Route>
       </Route>
