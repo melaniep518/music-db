@@ -19,9 +19,9 @@ const Playlist = React.createClass({
       <div className="mainContainer">
         <div className="artistContainer">
           <h1 className="pageTitles">PlayLits</h1>
-          <ul>
+          <ul className="listUl">
             {this.props.playlists.map(function(val, idx) {
-            return <li key={idx}>{val.title}</li>
+            return <li className="listLi" key={idx}>{val.title}</li>
             })}
           </ul>
         </div>

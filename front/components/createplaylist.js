@@ -5,7 +5,7 @@ const CreatePlaylist = React.createClass({
     return (
       <div className="mainContainer">
         <div>
-          <h1>Create a playlist</h1>
+          <h1 className="pageTitles">Create a playlit</h1>
           <form>
             <label>Playlist Name</label>
             <input type="text"></input>
