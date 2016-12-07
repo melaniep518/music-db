@@ -13,6 +13,8 @@ const Playlist = React.createClass({
       }
     })
   },
+
+// add on click or Link to to map function and pass data through props
   render: function (){
       console.log("playlists", this.props.playlists)
     return (
