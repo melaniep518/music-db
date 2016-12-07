@@ -23,7 +23,7 @@ const Artist = React.createClass({
     return (
       <div className="mainContainer">
         <div className="artistContainer">
-          <h1 className="pageTitles">Fire Artists</h1>
+          <h1 className="pageTitles"><i className="em em-fire"></i>Artists<i className="em em-fire"></i></h1>
           <ul className="listUl">
             {this.props.artists.map(function(val, idx) {
             return <li className="listLi" key={idx}>{val.name}</li>})}

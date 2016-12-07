@@ -15,15 +15,14 @@ const Song = React.createClass({
   render: function(){
     return (
       <div className="mainContainer">
-        <h1>Song List</h1>
         <div className="songContainer">
             {this.props.songs.map(function(val, idx) {
               console.log('VAL:', val.artist.name)
               return (
                 <div key={idx} className="individualSong">
-                  <h2>{val.title}</h2>
-                  <h3>by {val.artist.name}</h3>
-                  <iframe id="ytplayer" type="text/html" width="auto" height="300"
+                  <h1 className="songName">{val.title}</h1>
+                  <h2 className="songArtist">by {val.artist.name}</h2>
+                  <iframe id="ytplayer" type="text/html" width="500" height="300"
                   src={`${val.youtube_url.replace('watch?v=', 'embed/')}?origin=http://localhost:9999.com`}></iframe>
                 </div>
               )
