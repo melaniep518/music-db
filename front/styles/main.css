@@ -121,3 +121,29 @@ i {
   margin-top: 0;
 }
 /*--------/Song-------*/
+
+
+
+/*--------Create Playlist-------*/
+/*.createPlaylistsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*align-items: center;*/
+  height: 350px;
+  width: 425px;
+  justify-content: space-around;
+  /*background-color: blue;*/
+  margin-right: 0;
+}
+
+input {
+  height: 20px;
+}
+/*--------/Create Playlist-------*/
