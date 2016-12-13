@@ -15,6 +15,8 @@ import {SongContainer} from './containers/song-container';
 import CreatePlaylist from './components/createplaylist';
 import {SinglePlaylist} from './components/singlePlaylist';
 
+import Login from './components/login';
+
 const App = React.createClass({
   render: function (){
     return (
@@ -36,6 +38,7 @@ ReactDOM.render(
         <Route path="playlists" component={PlaylistContainer}></Route>
         <Route path="createPlaylist" component={CreatePlaylist}></Route>
         <Route path="singlePlaylist" component={SinglePlaylist}></Route>
+        <Route path="login" component={Login}></Route>
       </Route>
     </Router>
   </Provider>,

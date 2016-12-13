@@ -7,6 +7,8 @@ const Artist = React.createClass({
 // START HERE:
 // sends an ajax request to our backend
 // from here: displayArtists action
+// AJAX requests should be seperated as actions with thunk middleware, lifestyle components are okay because there's no other
+// straightforward way to do this with react, to avoid using componentDidMount we can use react-router onEnter function
   componentDidMount: function() {
     $.ajax({
       url: '/api/artists/',
